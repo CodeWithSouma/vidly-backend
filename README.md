@@ -1,2 +1,2 @@
 # vidly-backend
-A simple video rental Application 
+This project is the backend of Vidly, an imaginary video rental app.
