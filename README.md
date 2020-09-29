@@ -7,6 +7,7 @@ This project is the backend of Vidly, an imaginary video rental app.
 * movies
 * rentals
 * users
+* auth
 
 ***
 
@@ -364,3 +365,42 @@ This project is the backend of Vidly, an imaginary video rental app.
     },
     "dateOut": "2020-09-28T16:32:26.037Z"
     }
+
+### **USERS API's sample request and response**
+
+**POST REQUEST (Create/Register)**
+
+    http://localhost:3000/api/users/
+
+**PASS A JSON OBJECT IN POSTMAN**
+
+    {
+    "name":"Soumadip Dey",
+    "email":"souma.smit@gmail.com",
+    "password":"12345"
+    }
+
+**RESPONSE**
+
+    {
+    "_id": "5f72dbe67bf17507ec0202ea",
+    "name": "Soumadip Dey",
+    "email": "souma.smit@gmail.com"
+    }
+
+### **AUTH API's sample request and response**
+
+    **POST REQUEST (Create/Register)**
+
+    http://localhost:3000/api/auth/
+
+**PASS A JSON OBJECT IN POSTMAN**
+
+    {
+    "email":"souma.smit@gmail.com",
+    "password":"12345"
+    }
+
+**RESPONSE**
+
+    true
