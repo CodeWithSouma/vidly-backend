@@ -401,6 +401,6 @@ This project is the backend of Vidly, an imaginary video rental app.
     "password":"12345"
     }
 
-**RESPONSE**
+**RESPONSE (JSON WEB TOKEN/JWT)**
 
-    true
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjcyZDk4ZDdiZjE3NTA3ZWMwMjAyZTkiLCJpYXQiOjE2MDEzNjQyNzd9.k1GiiyEMUSbDFVqqJWmo8hsLfMQTXNas5eiJfck_RBg
