@@ -19,7 +19,7 @@ if (!config.get('jwtPrivateKey')) {
 mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://localhost/vidly',{ useNewUrlParser: true ,useUnifiedTopology: true,useFindAndModify:false})
     .then(() => console.log('Connected to MongoDB...'))
-    .catch((err) => console.err('Could not connect to MongoDB...'));
+    .catch((err) => console.error('Could not connect to MongoDB...'));
 
 app.use(express.json());
 app.use('/api/genres', genres);
