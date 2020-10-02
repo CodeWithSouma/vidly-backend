@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testEnvironment=node --watchAll --verbose"
+    "test": "jest --testEnvironment=node --watchAll --verbose --runInBand --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "winston-mongodb": "^4.0.0-rc1"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "supertest": "^5.0.0"
   }
 }
