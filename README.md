@@ -390,7 +390,7 @@ This project is the backend of Vidly, an imaginary video rental app.
 
 ### **AUTH API's sample request and response**
 
-    **POST REQUEST (Create/Register)**
+**POST REQUEST (Create/Register)**
 
     http://localhost:3000/api/auth/
 
