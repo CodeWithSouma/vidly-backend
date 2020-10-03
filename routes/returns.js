@@ -1,9 +1,10 @@
 const express = require('express');
 const { Rental } = require('../models/rental');
+const auth = require('../middleware/auth');
 const router = express.Router();
 
 
-router.post('/', async (req,res) => {
+router.post('/', auth, async (req,res) => {
     if(!req.body.customerId) return res.status(400).send('Customer id not provided.');
     if(!req.body.movieId) return res.status(400).send('Movie id not provided.');
     const rental = await Rental.findOne({
@@ -12,7 +13,10 @@ router.post('/', async (req,res) => {
     });
     if(!rental) return res.status(404).send('Rental not found.');
     if(rental.dateReturned) return res.status(400).send('Returned already processed.');
-    res.status(401).send('Unauthorized.');
+    rental.dateReturned = new Date();
+    await rental.save();
+    return res.status(200).send();
+    
 });
 
 module.exports = router;
