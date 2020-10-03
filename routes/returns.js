@@ -4,7 +4,9 @@ const router = express.Router();
 
 
 router.post('/', (req,res) => {
-    res.status(401).send('Unauthorized');
+    if(!req.body.customerId) return res.status(400).send('Customer id not provided.');
+    if(!req.body.movieId) return res.status(400).send('Movie id not provided.');
+    res.status(401).send('Unauthorized.');
 });
 
 module.exports = router;
