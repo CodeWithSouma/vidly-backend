@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testEnvironment=node --watchAll --verbose --runInBand --detectOpenHandles --coverage"
+    "test": "jest --testEnvironment=node --watchAll --verbose --runInBand --detectOpenHandles --coverage",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "compression": "^1.7.4",
     "config": "^3.3.2",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "helmet": "^4.1.1",
     "joi": "^13.1.0",
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
