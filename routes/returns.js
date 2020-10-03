@@ -11,6 +11,7 @@ router.post('/', async (req,res) => {
         'movie._id':req.body.movieId
     });
     if(!rental) return res.status(404).send('Rental not found.');
+    if(rental.dateReturned) return res.status(400).send('Returned already processed.');
     res.status(401).send('Unauthorized.');
 });
 
