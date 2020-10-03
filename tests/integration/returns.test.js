@@ -1,3 +1,4 @@
+const moment = require('moment');
 const {Rental} = require('../../models/rental');
 const mongoose = require('mongoose');
 const request = require('supertest');
@@ -88,5 +89,14 @@ describe('/api/returns', () => {
         expect(diff).toBeLessThan(10*1000); 
     });
 
-    
+    it('should set rentalFee if input is valid', async () => {
+        rental.dateOut = moment().add(-7,'days').toDate();
+        await rental.save();
+        const res = await exec();
+
+        const rentalInDb = await Rental.findById(rental._id);
+        
+        expect(rentalInDb.rentalFee).toBe(14);
+    });
+
 });
