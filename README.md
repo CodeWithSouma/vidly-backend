@@ -35,11 +35,11 @@ All tests should pass.
 
     node index.js
 
-This will launch the Node server on port 3000. If that port is busy, you can set a different point in config/default.json.
+This will launch the Node server on port 3900. If that port is busy, you can set a different point in config/default.json.
 
 Open up your browser and head over to:
 
-http://localhost:3000/api/genres
+http://localhost:3900/api/genres
 
 You should see the list of genres. That confirms that you have set up everything successfully.
 
@@ -69,7 +69,7 @@ On Windows:
 
 **GET REQUEST (Read Data)**
 
-    http://localhost:3000/api/genres/
+    http://localhost:3900/api/genres/
 
 **RESPONSE**
 
@@ -83,7 +83,7 @@ On Windows:
 
 **GET REQUEST WITH PASSING ID (Read Data)**
 
-    http://localhost:3000/api/genres/5f6f50aab53731ef06d7c01b
+    http://localhost:3900/api/genres/5f6f50aab53731ef06d7c01b
 
 **RESPONSE**
 
@@ -95,7 +95,7 @@ On Windows:
 
 **POST REQUEST (Create)**
 
-    http://localhost:3000/api/genres/
+    http://localhost:3900/api/genres/
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -113,7 +113,7 @@ On Windows:
 
 **PUT REQUEST (Update)**
 
-    http://localhost:3000/api/genres/5f71fff70ada96b9be73e7b2
+    http://localhost:3900/api/genres/5f71fff70ada96b9be73e7b2
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -131,7 +131,7 @@ On Windows:
 
 **DELETE REQUEST**
 
-    http://localhost:3000/api/genres/5f71fff70ada96b9be73e7b2
+    http://localhost:3900/api/genres/5f71fff70ada96b9be73e7b2
 
 **RESPONSE**
 
@@ -145,7 +145,7 @@ On Windows:
 
 **GET REQUEST (Read Data)**
 
-    http://localhost:3000/api/customers/
+    http://localhost:3900/api/customers/
 
 **RESPONSE**
 
@@ -161,7 +161,7 @@ On Windows:
 
 **GET REQUEST WITH PASSING ID (Read Data)**
 
-    http://localhost:3000/api/customers/5f6f53afb53731ef06d7c01e
+    http://localhost:3900/api/customers/5f6f53afb53731ef06d7c01e
 
 **RESPONSE**
 
@@ -175,7 +175,7 @@ On Windows:
 
 **POST REQUEST (Create)**
 
-    http://localhost:3000/api/customers/
+    http://localhost:3900/api/customers/
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -196,7 +196,7 @@ On Windows:
 
 **PUT REQUEST (Update)**
 
-    http://localhost:3000/api/customers/5f72057a0ada96b9be73e7b3
+    http://localhost:3900/api/customers/5f72057a0ada96b9be73e7b3
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -218,7 +218,7 @@ On Windows:
 
 **DELETE REQUEST**
 
-    http://localhost:3000/api/customers/5f72057a0ada96b9be73e7b3
+    http://localhost:3900/api/customers/5f72057a0ada96b9be73e7b3
 
 **RESPONSE**
 
@@ -234,7 +234,7 @@ On Windows:
 
 **GET REQUEST (Read Data)**
 
-    http://localhost:3000/api/movies/
+    http://localhost:3900/api/movies/
 
 **RESPONSE**
 
@@ -254,7 +254,7 @@ On Windows:
 
 **GET REQUEST WITH PASSING ID (Read Data)**
 
-    http://localhost:3000/api/customers/5f6f5180b53731ef06d7c01c
+    http://localhost:3900/api/customers/5f6f5180b53731ef06d7c01c
 
 **RESPONSE**
 
@@ -272,7 +272,7 @@ On Windows:
 
 **POST REQUEST (Create)**
 
-    http://localhost:3000/api/movies/
+    http://localhost:3900/api/movies/
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -299,7 +299,7 @@ On Windows:
 
 **PUT REQUEST (Update)**
 
-    http://localhost:3000/api/movies/5f720bf40ada96b9be73e7b6
+    http://localhost:3900/api/movies/5f720bf40ada96b9be73e7b6
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -326,7 +326,7 @@ On Windows:
 
 **DELETE REQUEST**
 
-    http://localhost:3000/api/movies/5f720bf40ada96b9be73e7b6
+    http://localhost:3900/api/movies/5f720bf40ada96b9be73e7b6
 
 **RESPONSE**
 
@@ -347,7 +347,7 @@ On Windows:
 
 **GET REQUEST (Read Data)**
 
-    http://localhost:3000/api/rentals/
+    http://localhost:3900/api/rentals/
 
 **RESPONSE**
 
@@ -371,7 +371,7 @@ On Windows:
 
 **GET REQUEST WITH PASSING ID (Read Data)**
 
-    http://localhost:3000/api/rentals/5f6f79eb1076b31a6a3190e2
+    http://localhost:3900/api/rentals/5f6f79eb1076b31a6a3190e2
 
 **RESPONSE**
 
@@ -393,7 +393,7 @@ On Windows:
 
 **POST REQUEST (Create)**
 
-    http://localhost:3000/api/rentals/
+    http://localhost:3900/api/rentals/
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -424,7 +424,7 @@ On Windows:
 
 **POST REQUEST (Create/Register)**
 
-    http://localhost:3000/api/users/
+    http://localhost:3900/api/users/
 
 **PASS A JSON OBJECT IN POSTMAN**
 
@@ -446,7 +446,7 @@ On Windows:
 
 **POST REQUEST (Create/Register)**
 
-    http://localhost:3000/api/auth/
+    http://localhost:3900/api/auth/
 
 **PASS A JSON OBJECT IN POSTMAN**
 
